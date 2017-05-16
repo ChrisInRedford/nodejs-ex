@@ -217,8 +217,8 @@ pre {
 <section class='container'>
           <hgroup>
             <h1>Welcome to Chris' Awesomest (and First) Node.js application on OpenShift</h1>
-			<h1>You should check out <a href="http://detroitaristo.com>">My 1991 Toyota Aristo!</a>
-          </hgroup>
+			You should check out <a href="http://detroitaristo.com>">My 1991 Toyota Aristo!</a>
+         
 
 
         <div class="row">
@@ -232,22 +232,7 @@ pre {
   <li>Click the "Copy to clipboard" icon to the right of the "GitHub webhook URL" field</li>
   <li>Navigate to your repository on GitHub and click on repository settings &gt; webhooks &gt; Add webhook</li>
   <li>Paste your webhook URL provided by OpenShift</li>
-  <li>Leave the defaults for the remaining fields &mdash; that's it!</li>
-</ol>
-
-
-                <h3>Working in your local Git repository</h3>
-                <p>If you forked the application from the OpenShift GitHub example, you'll need to manually clone the repository to your local system. Copy the application's source code Git URL and then run:</p>
-
-<pre>$ git clone &lt;git_url&gt; &lt;directory_to_create&gt;
-
-# Within your project directory
-# Commit your changes and push to OpenShift
-
-$ git commit -a -m 'Some commit message'
-$ git push</pre>
-
-            </section>
+  <li>Leave the defaults for the remaining fields &mdash; that's it!</li></ol></section>
 
           </section>
           <section class="col-xs-12 col-sm-6 col-md-6">
@@ -264,23 +249,13 @@ $ git push</pre>
                     <li><a href="http://docs.openshift.org/latest/using_images/s2i_images/nodejs.html">Getting Started with Node.js on OpenShift</a></li>
                     <li><a href="http://stackoverflow.com/questions/tagged/openshift">Stack Overflow questions for OpenShift</a></li>
                     <li><a href="http://git-scm.com/documentation">Git documentation</a></li>
-                  </ul>
-
-                <h2>Request information</h2>
-                <p>Page view count:
+                    </ul>
+                    
+                    Page view count:
                 <% if (pageCountMessage) { %>
                    <span class="code" id="count-value"><%=pageCountMessage%></span>
-                   </p>
-                    <div class="code"><h3>DB Connection Info:</h3>
-                      <table style='margin-left: 20px'>
-                          <tr><td>Type:</td><td><%= dbInfo.type %></td></tr>
-                          <tr><td>URL:</td><td><%= dbInfo.url %></td></tr>
-                      </table>
-                    </div>
-                <% } else { %>
-                   <span class="code" id="count-value">No database configured</span>
-                   </p>
-                <%} %>
+                  
+                    <div class="code"></div>
           </section>
         </div>
 
